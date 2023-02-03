@@ -1,0 +1,84 @@
+*{
+    margin: 0;   
+    padding: 0;  
+}
+
+/* Body Header */
+#body-header{
+    height: 65vh;
+    background-image: url(images/coding.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.9; 
+}
+/* Horizontal Lists */
+.horizontal-list{
+    list-style: none; 
+    padding-left: 0px;
+}
+.horizontal-list li{
+    display: inline-block;  
+    margin: 0px 8px;
+}
+.horizontal-list li a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-menu li a{
+    transition: color 1s, border-bottom 4s;    
+}
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 2px solid lightgray;
+} 
+.text-center{
+    text-align: center;
+}
+
+/* My name and social icons */
+.name-social-container{
+    margin-top: 20vh;
+}
+#my-name{
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+.social-icons li a i{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%; 
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px lightgray;   /* h-offset, v-offset, blur, spread */
+    
+}
+/* About Section */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+
+}
+#my-image img{ 
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#intro{
+    padding: 0% 13%;
+    text-align: justify;
+}
+#intro span{
+    color: blue;
+    font-weight: 800;
+}
