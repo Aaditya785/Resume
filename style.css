@@ -55,6 +55,37 @@
     box-shadow: 0px 0px 6px 4px lightgray;   /* h-offset, v-offset, blur, spread */
     
 }
+/* Section */
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 75vh; */
+    align-items: center;
+}
+section:nth-child(2n)
+{
+    background-color: #fff;
+}
+
+section:nth-child(2n+1)
+{
+    background-color: rgba(191, 183, 183, 0.676);
+}
+
+.section-heading{
+    padding: 20px 10px 10px;
+    width: auto;
+    margin: 10px auto;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: blue;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
 /* About Section */
 #about{
     height: auto;
@@ -81,4 +112,102 @@
 #intro span{
     color: blue;
     font-weight: 800;
+}
+
+/* Skills Display */
+.skills-display{
+    width: 70%;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    height: 1.4rem;
+    width: 7rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name span{
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 5px ; 
+}
+
+/* Experience */
+.timeline{
+    position: relative;
+    border: 2px solid black; 
+    width: 75%;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;   
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black; 
+    margin: 5px;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    border-radius: 50%;
+    background-color: red; 
+    position: absolute;
+    height: 0.5rem; 
+    width: 0.5rem;   
+    top: 25%; 
+    left: -25px;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    border-radius: 50%;
+    background-color: red; 
+    position: absolute;
+    height: 0.5rem; 
+    width: 0.5rem;   
+    top: 25%; 
+    right: -22px;
+}
+.timeline-divider{
+    position: absolute;
+    height: 75%; 
+    border: 1px dashed rgb(192, 68, 68);
+    width: 0;
+    top: 10%;
+    left: 50%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 45%;
+    transform: rotate(90deg);
+}
+
+/* Common Classes */
+.mb75px{
+    margin-bottom: 75px;
+}
+.text-highlight{
+    color: blue;
+    font-weight: 600;
+}
+.mb-blue{
+    background-color: blue;
+}
+.eighty-five{
+    width: 85%;
+    height: inherit;
+    border-radius: 1rem;
+}
+
+
+.section-height{
+    height: 75vh; 
 }
